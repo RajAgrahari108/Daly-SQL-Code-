@@ -19,3 +19,10 @@ use students;
 -- Display all records from the 'students' table.
 select * from students;
 
+
+-- Drop the 'students' table.
+ drop table students; (Delete the table permanently);
+
+
+--
+ select * from students;
