@@ -50,3 +50,8 @@
  select * 
  from students 
  where city IN ("Mumbai",'Panagarh','Pune');
+
+-- Query to select all records from the 'students' table where 'stu_marks' is between 80 and 90
+ select * 
+ from students 
+ where stu_marks between  80 and 90;
