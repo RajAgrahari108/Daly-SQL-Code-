@@ -60,3 +60,23 @@
  select * 
  from students 
  where city IN ("Mumbai",'Panagarh','Pune');
+
+
+-- Query to select all records from the 'students' table where 'stu_marks' is greater than 75, limit the result to 3 records
+ select * 
+ from students 
+ where stu_marks > 75
+ LIMIT 3;
+
+-- Query to select all records from the 'students' table and order them by 'stu_marks' in ascending order
+
+ select * 
+ from students 
+ order by stu_marks ASC ;
+ 
+
+-- Query to select all records from the 'students' table and order them by 'stu_marks' in descending order, limit the result to 3 records
+ select * 
+ from students 
+ order by stu_marks DESC
+ LIMIT 3;
