@@ -38,3 +38,10 @@
 
 -- Query to select all records from the 'students' table where 'stu_marks' plus 10 is greater than 100
    select * from students where stu_marks + 10>100;
+   
+
+   -- Query to select all records from the 'students' table where 'stu_marks' is greater than 90 and 'city' is 'Mumbai'
+
+   select * 
+ from students 
+ where stu_marks > 90 and city = "Mumbai";
