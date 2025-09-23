@@ -35,3 +35,6 @@
 
 -- SQL script to create a database named 'college'
    select * from student where stu_marks>80 and city = "Mumbai";
+
+-- Query to select all records from the 'students' table where 'stu_marks' plus 10 is greater than 100
+   select * from students where stu_marks + 10>100;
