@@ -24,3 +24,7 @@
   9      INTO student VALUES (108, 'Rupal', 12, 'F', 'Pune')
  10      INTO student VALUES (109, 'Boby', 99, 'A', 'Panagarh')
  11  SELECT * FROM dual;
+
+ -- Query to select all records from the 'students' table where 'stu_marks' is greater than 80
+
+ select * from students where stu_marks>80;
