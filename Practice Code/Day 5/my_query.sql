@@ -23,3 +23,10 @@ SELECT city, count(Stu_Roll)
  FROM students 
  GROUP BY city
  ORDER BY avg(stu_marks);
+
+
+--- Find the number of students in each grade and sort the result by grade
+  select  stu_grade , count(Stu_Roll)
+ FROM students 
+ group by  stu_grade
+ ORDER by  stu_grade;
