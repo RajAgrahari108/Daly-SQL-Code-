@@ -4,7 +4,7 @@ CREATE DATABASE startersql;
 
 USE startersql;
 
---
+--- Creating a table named 'users'
 CREATE TABLE users (
 id INT AUTO_INCREMENT PRIMARY KEY,
  name VARCHAR(100) NOT NULL,
@@ -13,5 +13,10 @@ id INT AUTO_INCREMENT PRIMARY KEY,
  date_of_birth DATE,
  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+
+--- Display all records from the 'students' table.
+SELECT * FROM users;
+
 
 
