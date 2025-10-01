@@ -9,7 +9,7 @@ Sequence created.
 SQL> SELECT SNO.NEXTVAL FROM DUAL;
 
    NEXTVAL
-----------
+--
          2
 
 SQL> SELECT SNO.NEXTVAL FROM DUAL;
@@ -43,3 +43,10 @@ SQL> SELECT SNO.CURRVAL FROM DUAL;
         10
 
 SQL>
+-- Attempting to get the next value again will result in an error since the maximum value has been reached.
+--
+ CREATE SEQUENCE SNO3
+  2  START WITH 10
+  3  INCREMENT BY -1
+  4  MAXVALUE 10
+  5  MINVALUE 1;
