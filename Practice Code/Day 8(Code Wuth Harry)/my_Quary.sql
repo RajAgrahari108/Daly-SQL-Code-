@@ -8,6 +8,5 @@ NSERT INTO users (name, email, gender, date_of_birth) VALUES
 ('david@example.com', 'David', 'Male', '2000-08-09'),
 ('eva@example.com', 'Eva', 'Female', '1993-12-30');
 
-
---
+-- Query to select all users
 select * from users;
