@@ -19,4 +19,10 @@ id INT AUTO_INCREMENT PRIMARY KEY,
 SELECT * FROM users;
 
 
+--- Modify the 'name' column to increase its length to 150 characters.
+ALTER TABLE users MODIFY COLUMN name VARCHAR(150);
+
+
+-- Move the 'email' column to be the second column in the table.
+ALTER TABLE users MODIFY COLUMN email VARCHAR(100) AFTER id;
 
