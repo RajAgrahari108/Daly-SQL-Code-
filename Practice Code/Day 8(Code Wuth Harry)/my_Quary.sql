@@ -15,7 +15,7 @@ select * from users;
 --- Create the users table
 CREATE DATABASE IF NOT EXISTS startersql;
 
-  
+-- Select the database
 USE startersql;
 
 
