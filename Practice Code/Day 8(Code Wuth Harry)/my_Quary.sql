@@ -18,7 +18,6 @@ CREATE DATABASE IF NOT EXISTS startersql;
 -- Select the database
 USE startersql;
 
-
 --
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
