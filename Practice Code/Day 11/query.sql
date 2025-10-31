@@ -46,3 +46,6 @@ select max(sal) from emp where job = 'MANAGER';
 -- Query to select names and salaries of employees with salaries between 1000 and 3000
 select ename, sal from emp where sal between 1000 and 3000;     
 
+
+-- Query to select the maximum salary of employees with the job title 'MANAGER'
+select max(sal) from emp where job = 'MANAGER';
