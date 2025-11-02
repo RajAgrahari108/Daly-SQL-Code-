@@ -42,3 +42,51 @@ select * from emp where sal > 1250 and sal <3000;
 
 --- Query to find employees with null commission and non-null salary
   select ename , sal, comm from emp where comm is null and sal is not null;
+
+--- Query to find employees whose names start with 'S' and end with 'H'
+  select * from emp where ename = 'SMITH';
+
+
+--      -- Query to find employees whose names start with 'S'
+  select * from emp where ename like 'S%';
+
+
+--  -- Query to find employees whose names end with 'S' 
+
+
+   select * from emp where ename like '%S';
+--  -- Query to find employees whose names contain 'S'
+
+
+   select * from emp where ename like '%S%';
+--  -- Query to find employees whose names start with 'J' and end with 'S'
+   select * from emp where ename like 'J%S';
+
+
+--  -- Query to find employees whose names have 'A' as the second letter
+   SQL> select ename from emp where ename like '_A%';
+
+
+--  -- Query to find employees with null commission
+   select * from emp where comm is null;
+
+
+--  -- Query to find managers in department 10
+   select * from emp where job = 'MANAGER' and  deptno = 10;
+
+
+--  -- Query to find managers not in department 10
+   select * from emp where job = 'MANAGER' and  deptno not in 10;
+
+
+--  -- Query to find salesmen in department 30 with salary greater than 2450
+   select * from emp where job = 'SALESMAN' and deptno = 30 and sal >2450;
+
+
+--  -- Query to find all employees and their annual salary excluding those in department 30
+    set line 100 pages 100;
+    select * from emp;
+
+
+--  -- Query to find all employees and their annual salary excluding those in department 30
+    select ename, sal*12 from emp where deptno not in 30;
