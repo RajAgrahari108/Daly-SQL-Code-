@@ -90,3 +90,25 @@ select * from emp where sal > 1250 and sal <3000;
 
 --  -- Query to find all employees and their annual salary excluding those in department 30
     select ename, sal*12 from emp where deptno not in 30;
+
+    select sum(sal) from emp;
+
+    select count(*) from emp where sal > 1500 and deptno  =20;
+
+    select count(*) from emp where ename like '%E%';
+
+    select MIN(Sal) from emp where job = 'CLERK' and deptno in (10,20);
+
+    select count(*) from emp where hiredate > '31-dec-1982' and hiredate < '01-JAN-1985' and deptno in (10, 30);
+
+   select max(sal) from emp where job = 'MANAGER' and deptno = 20 and sal > comm ;
+
+   select sum(sal) from emp where job = 'CLERK';
+
+   select sum(Sal) from emp where hiredate like '%FEB%';
+
+   select avg(sal), sum(Sal), count(*), max(Sal) from emp where job = 'PERSIDENT';
+
+   select ename from emp where ename like '%A%';
+
+   select sum(Sal) from emp where job = 'CLUERK' and deptno = 30;
