@@ -91,12 +91,19 @@ select * from emp where sal > 1250 and sal <3000;
 --  -- Query to find all employees and their annual salary excluding those in department 30
     select ename, sal*12 from emp where deptno not in 30;
 
+
+--  -- Query to find total salary of all employees
     select sum(sal) from emp;
 
+
+--  -- Query to find count of employees with salary greater than 1500 in department 20
     select count(*) from emp where sal > 1500 and deptno  =20;
 
+--  -- Query to find count of employees whose names contain 'E'
     select count(*) from emp where ename like '%E%';
 
+
+--  -- Query to find minimum salary of clerks in departments 10 and 20
     select MIN(Sal) from emp where job = 'CLERK' and deptno in (10,20);
 
     select count(*) from emp where hiredate > '31-dec-1982' and hiredate < '01-JAN-1985' and deptno in (10, 30);

@@ -1,18 +1,19 @@
+--  -- Query to find total number of employees
  select count(job) from emp;
 
-
+--  -- Query to find minimum salary of managers and clerks in department 10
  select min(sal) from emp where job in ('MANAGER', 'CLERK') and deptno = 10;
 
-
+--  -- Query to find total number of employees in each department
   select deptno, count(*) from emp where job not in 'ANALYST' group by deptno;
 
 
   select job , max(sal) from emp group by job;
 
-
+--
    select job , count(*) from emp where ename like '%A%' group by job;
 
-
+--
    select deptno, count(comm) from emp group by deptno;
 
 
